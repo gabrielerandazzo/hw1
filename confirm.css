@@ -1,0 +1,358 @@
+body {
+    margin: 0px;
+    font-family: "Inter", sans-serif;
+    scrollbar-width: thin;
+}
+
+.cart-header-container {
+    display: flex;
+    justify-content: center;
+    background: #f1f4f6;
+    margin-bottom: 40px;
+    padding: 32px 0;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    gap: 16px;
+    width: 100%;
+    max-width: 1285px;
+}
+
+.header-steps {
+    display: flex;
+    justify-content: space-between;
+}
+
+.step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 109px;
+}
+
+.step-number {
+    align-items: center;
+    background-color: #d8e0e5;
+    color: #829bab;
+    display: flex;
+    font-size: 8px;
+    font-weight: 500;
+    height: 24px;
+    justify-content: center;
+    line-height: 12px;
+    margin-bottom: 8px;
+    width: 24px;
+    border-radius: 50%;
+}
+
+.title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.current {
+    background-color: #f85a00 !important;
+    color: white !important;
+}
+
+.step-text {
+    text-align: center;
+    font-size: 13px;
+    color: #132540;
+}
+
+.header-security {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    color: #829bab;
+}
+
+.header-security img {
+    width: 16px;
+    height: 16px;
+}
+
+.order-status {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-brand-image {
+    max-width: 64px;
+}
+
+.main-container {
+    max-width: 1270px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #e5eaed;
+    border-radius: 6px;
+    margin-bottom: 32px;
+    padding: 24px;
+    margin: 7.5px;
+    width: 60vw;
+
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+}
+
+.product-images {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-image {
+    max-height: 80px;
+    max-width: 88px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    color: #132530;
+}
+
+.product-name {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.product-short-desc {
+    font-size: 13px !important;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.product-number {
+    color: #59666e;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.wishlist-container {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.wishlist-container svg {
+    width: 24px;
+    height: 24px;
+    fill: #132530;
+}
+
+.expand-product-details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2px;
+    color: #4d7187;
+    margin-top: 15px;
+    font-size: .923em;
+    cursor: pointer;
+}
+
+.down-arrow-filled {
+    border: 3px solid transparent;
+    border-top: 4px solid #4d7187;
+    margin-top: 3px;
+}
+
+.product-cart-container {
+    display: flex;
+    justify-content: start;
+    margin-top: 10px;
+}
+
+.cart-details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 8px;
+}
+
+.product-cart-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    width: 40px;
+    font-size: 13px;
+    margin-right: -1px;
+}
+
+.product-inc-dec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #c4d0d8;
+    height: 25px;
+    width: 40px;
+}
+
+.up-arrow {
+    height: 6px;
+    width: 6px;
+    transform: rotate(225deg);
+    border-bottom: 1px solid #032f4a;
+    border-right: 1px solid #032f4a;
+}
+
+.down-arrow {
+    height: 6px;
+    width: 6px;
+    transform: rotate(45deg);
+    border-bottom: 1px solid #032f4a;
+    border-right: 1px solid #032f4a;
+}
+
+.product-price {
+    white-space: nowrap;
+    font-size: 17px !important;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500 !important;
+    line-height: 20px !important;
+}
+
+.order-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+    font-weight: 500 !important;
+    padding: 0 7.5px;
+    width: calc(100% - 15px);
+    max-width: 1300px;
+}
+
+.order-container .title {
+    font-size: 22px;
+    color: #132530;
+    font-family: "Montserrat", sans-serif;
+    border-bottom: 1px solid #e5eaed;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+}
+
+.order-prices {
+    border-bottom: 1px solid #e5eaed;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    font-size: 13px;
+    color: #132530;
+}
+
+.table-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-price {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+}
+
+.order-vat-text {
+    font-size: 12px;
+    color: #59666e;
+}
+
+.order-btn {
+    color: white;
+    font-size: 1em;
+    min-height: 48px;
+    min-width: 48px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    margin-bottom: 16px;
+    font-weight: 600;
+    min-width: 306px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.address-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+    gap: 16px;
+}
+
+.receipt {
+    background: #0068d7;
+}
+
+.home {
+    background: #d32e1d;
+}
+
+footer {
+    border-top: 1px solid #e5eaed;
+    margin: 32px 0;
+    padding-top: 32px;
+}
+
+footer a {
+    color: #0068d7;
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.show-flex {
+    display: flex;
+}
+
+.show-none {
+    display: none;
+}
+
+@media(max-width: 990px) {
+    .header-security {
+        display: none;
+    }
+
+    .cart-header {
+        flex-direction: column;
+    }
+
+    .step-text {
+        display: none;
+    }
+}
+
+@media(max-width: 575px) {
+    .step {
+        max-width: 75px;
+        width: 20%;
+        padding: 8px;
+    }
+}

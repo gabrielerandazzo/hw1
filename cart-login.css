@@ -1,0 +1,233 @@
+body {
+    margin: 0px;
+    font-family: "Inter", sans-serif;
+    scrollbar-width: thin;
+}
+
+.cart-header-container {
+    display: flex;
+    justify-content: center;
+    background: #f1f4f6;
+    margin-bottom: 40px;
+    padding: 32px 0;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    gap: 16px;
+    width: 100%;
+    max-width: 1285px;
+}
+
+.header-steps {
+    display: flex;
+    justify-content: space-between;
+}
+
+.step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 109px;
+}
+
+.step-number {
+    align-items: center;
+    background-color: #d8e0e5;
+    color: #829bab;
+    display: flex;
+    font-size: 8px;
+    font-weight: 500;
+    height: 24px;
+    justify-content: center;
+    line-height: 12px;
+    margin-bottom: 8px;
+    width: 24px;
+    border-radius: 50%;
+}
+
+.current {
+    background-color: #f85a00 !important;
+    color: white !important;
+}
+
+.step-text {
+    text-align: center;
+    font-size: 13px;
+    color: #132540;
+}
+
+.header-security {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    color: #829bab;
+}
+
+.header-security img {
+    width: 16px;
+    height: 16px;
+}
+
+.signup-login {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    max-width: 1270px;
+    justify-content: center;
+}
+
+.main-container span {
+    padding: 0 8px;
+    font-size: 13px;
+    display: block;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+form {
+    width: 100%;
+}
+
+#without-signup {
+    width: 33.3%;
+}
+
+.form-container input,
+#without-signup a {
+    display: block;
+    height: 56px;
+    border: 1px solid #c4d0d8;
+    border-radius: 5px;
+    margin: 8px;
+    width: calc(100% - 26px);
+    padding: 0 0 0 8px;
+}
+
+#without-signup a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#login-btn {
+    color: white;
+    background: #0068d7;
+    border: none;
+}
+
+.signup-privacy {
+    display: flex;
+    font-size: 13px;
+    margin: 8px;
+    justify-content: space-between;
+}
+
+.save-access {
+    display: flex;
+    font-size: 13px;
+    margin: 8px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.signup-privacy input,
+.save-access input {
+    width: 16px;
+    height: 16px;
+}
+
+#signup-btn,
+#login-btn {
+    color: white;
+    background: #0068d7;
+    border: none;
+}
+
+
+.forgot-password {
+    color: #0068d7;
+    text-decoration: none;
+    font-size: 13px;
+    display: block;
+    text-align: right;
+    margin: 8px;
+}
+
+.form-title {
+    margin-bottom: 24px;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
+
+footer {
+    border-top: 1px solid #e5eaed;
+    margin: 32px 0;
+    padding-top: 32px;
+}
+
+footer a {
+    color: #0068d7;
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+
+.show-flex {
+    display: flex;
+}
+
+.show-none {
+    display: none;
+}
+
+@media(max-width: 990px) {
+    .header-security {
+        display: none;
+    }
+
+    .cart-header {
+        flex-direction: column;
+    }
+
+    .step-text {
+        display: none;
+    }
+
+    .main-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #without-signup {
+        width: 100%;
+    }
+
+
+}
+
+@media(max-width: 575px) {
+    .step {
+        max-width: 75px;
+        width: 20%;
+        padding: 8px;
+    }
+
+    .form-container {
+        flex-direction: column;
+
+    }
+}
